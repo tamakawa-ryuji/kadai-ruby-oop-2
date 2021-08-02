@@ -14,13 +14,19 @@ end
 
 class RailsMentor<Mentor
     
+    attr_accessor :name
+    
+    def initialize(name)
+        self.name = name
+    end
+
     def job
     puts "#{self.name}です。私はRubyとRailsでWebアプリケーションを作ります。"
     end
 end
 
-Name1 =Mentor.new("煌木")
-Name1.job
+kirameki =Mentor.new("煌木")
+kirameki.job
 
-Name2 =RailsMentor.new("赤出")
-Name2.job
+akaide =RailsMentor.new("赤出")
+akaide.job
